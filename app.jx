@@ -1,0 +1,93 @@
+import React from 'react';
+
+const App = () => {
+  return (
+    <div className="font-sans bg-gray-100 text-gray-800">
+      {/* Header */}
+      <header className="bg-white shadow-md p-4 sticky top-0 z-50">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-xl font-bold">Emmanuel Akalazu</h1>
+          <nav className="space-x-4">
+            <a href="#about" className="hover:text-blue-600">About</a>
+            <a href="#skills" className="hover:text-blue-600">Skills</a>
+            <a href="#projects" className="hover:text-blue-600">Projects</a>
+            <a href="#achievements" className="hover:text-blue-600">Achievements</a>
+            <a href="#contact" className="hover:text-blue-600">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="bg-blue-600 text-white text-center py-20">
+        <h2 className="text-4xl font-bold mb-4">Hi, I'm Emmanuel 👋</h2>
+        <p className="text-lg">Frontend Developer | JavaScript Enthusiast | React Lover</p>
+      </section>
+
+      {/* About */}
+      <section id="about" className="py-16 px-6 max-w-4xl mx-auto">
+        <h3 className="text-3xl font-semibold mb-6">About Me</h3>
+        <p className="text-lg">
+          I’m a passionate web developer with a knack for crafting responsive, accessible, and user-focused web applications. I specialize in React.js and love solving real-world problems with elegant UI/UX solutions.
+        </p>
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-semibold mb-6">Skills</h3>
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg">
+            <li>HTML5</li>
+            <li>CSS3 / TailwindCSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="py-16 px-6 max-w-5xl mx-auto">
+        <h3 className="text-3xl font-semibold mb-6">Projects</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="text-xl font-bold mb-2">Tic-Tac-Toe Game</h4>
+            <p className="mb-2">A React-powered game with AI opponent using the Minimax algorithm.</p>
+            <a href="#" className="text-blue-600 underline">View Project</a>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="text-xl font-bold mb-2">Change Control QMS App</h4>
+            <p className="mb-2">A full-stack app for managing change requests in manufacturing.</p>
+            <a href="#" className="text-blue-600 underline">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements */}
+      <section id="achievements" className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-semibold mb-6">Achievements</h3>
+          <ul className="list-disc ml-5 text-lg space-y-2">
+            <li>Built 10+ React.js projects</li>
+            <li>Completed Meta Front-End Developer Certification</li>
+            <li>Recognized as “Best Developer” during Internship at XYZ Corp</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-16 px-6 max-w-3xl mx-auto text-center">
+        <h3 className="text-3xl font-semibold mb-6">Get in Touch</h3>
+        <p className="text-lg mb-4">Email: <a href="mailto:emmanuel@example.com" className="text-blue-600">emmanuel@example.com</a></p>
+        <p className="text-lg">GitHub: <a href="https://github.com/yourusername" className="text-blue-600">github.com/yourusername</a></p>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white text-center py-4 border-t">
+        <p>&copy; 2025 Emmanuel Akalazu. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
