@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emmanuel Akalazu | Web Developer</title>
+  <title>Emmanuel Akalazu | Web Developer</title> <!-- If "Akalazu" is correct, ignore this error. Otherwise, use a more common spelling or your preferred name. -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function(){
-      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+      emailjs.init("YOUR_USER_ID");
     })();
   </script>
 </head>
 <body>
   <nav>
     <div class="container nav-container">
-      <h1><i class="fas fa-code"></i> Emmanuel Akalazu</h1>
+      <h1><i class="fas fa-code"></i> Emmanuel Akalazu</h1> <!-- If "Akalazu" is correct, ignore this error. Otherwise, use a more common spelling or your preferred name. -->
       <ul style="list-style: none; display: flex; gap: 1rem;">
         <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
         <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
@@ -78,7 +78,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Emmanuel Akalazu. All rights reserved.</p>
+      <p>&copy; 2025 Emmanuel Akalazu. All rights reserved.</p> <!-- If "Akalazu" is correct, ignore this error. Otherwise, use a more common spelling or your preferred name. -->
     </div>
   </footer>
 
@@ -86,7 +86,7 @@
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
 
-      emailjs.sendForm('service_pcfobwr', 'template_292k0tb', this)
+      emailjs.sendForm('service_pcfobwr', 'template_292k0tb', this) // Replace 'YOUR_SERVICE_ID' with your actual EmailJS service ID
         .then(function() {
           alert('Message sent successfully!');
         }, function(error) {
