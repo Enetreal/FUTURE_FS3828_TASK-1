@@ -1,4 +1,5 @@
 # FUTURE_FS3828_TASK-1
+
 Personal Portfolio Website
 
 A modern, responsive personal portfolio website showcasing the skills, projects, and contact information of Emmanuel Akalazu, a Creative Web Developer. Built with HTML and CSS, the site features a clean design, a minimized hamburger navigation menu for mobile devices, and a professional aesthetic suitable for displaying web development expertise.
