@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Akalazu | Web Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    })();
+  </script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav>
+    <div class="container nav-container">
+      <h1><i class="fas fa-code"></i> Emmanuel Akalazu</h1>
+      <ul style="list-style: none; display: flex; gap: 1rem;">
+        <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
+        <li><a href="#skills" style="color: white; text-decoration: none;">Skills</a></li>
+        <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <header id="home">
-        <h1>Creative Web Developer</h1>
-        <img src="src/my-photo.jpg" alt="src/my-photo.jpg" class="profile-photo">
-        <p class="summary">I am a skilled web developer specialized in creating dynamic, user-friendly web applications. I combine strong frontend skills with backend expertise to deliver seamless digital experiences. I thrive in agile teams and enjoy solving real-world problems through clean, maintainable code.</p>
-    </header>
+  <header>
+    <div class="container">
+      <h2>Hello, I'm Emmanuel — a Front-End Web Developer</h2>
+      <p>I build responsive, interactive websites with modern technologies like HTML5, CSS3, and JavaScript.</p>
+    </div>
+  </header>
 
+  <main class="container">
     <section id="about">
-        <h2>About Me</h2>
-        <p>I have a strong background in web development with a degree in Computer Science. Over the past 3 years, I have worked on various projects, including e-commerce sites and personal blogs, enhancing my skills in front-end and back-end development.</p>
+      <h2>About Me</h2>
+      <p>I am passionate about transforming design ideas into responsive, user-friendly web interfaces. My goal is to deliver code that is clean, accessible, and performance-optimized.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>E-Commerce Platform</h3>
-            <p>Built a fully responsive e-commerce website using React for the frontend and Node.js with Express for the backend. Integrated Stripe for secure payments and implemented a shopping cart with real-time updates.</p>
-            <a href="https://github.com/Enetreal/ecommerce-platform" target="_blank" rel="noopener">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Personal Blog</h3>
-            <p>Developed a blog platform with a custom CMS using Django and PostgreSQL. Features include user authentication, post categorization, and a responsive design optimized for mobile and desktop.</p>
-            <a href="#" aria-disabled="true" tabindex="-1" style="pointer-events: none; color: gray;">Project Link Unavailable</a>
-        </div>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Weather App</strong>: Real-time weather app using OpenWeatherMap API and Geolocation.</li>
+        <li><strong>Tic-Tac-Toe Game</strong>: JavaScript game with AI (Minimax), score counter, and sound effects.</li>
+        <li><strong>Portfolio Website</strong>: Showcasing skills, contact, and project work in a clean layout.</li>
+      </ul>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>Git</li>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>React, Tailwind CSS, Bootstrap</li>
+        <li>REST APIs, Git/GitHub, Figma to Code</li>
+        <li>Responsive & Mobile-First Design</li>
+      </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
+      <h2>Contact</h2>
+      <p>Let's work together! Fill out the form below or email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
     </section>
+  </main>
 
-    <footer>
-        <p id="contact-email"></p>
-        <p>© Emmanuel Akalazu 2025. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Emmanuel Akalazu. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_pcfobwr', 'template_292k0tb', this)
+        .then(function() {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send message. Please try again later.');
+          console.error(error);
+        });
+    });
+  </script>
 </body>
 </html>
